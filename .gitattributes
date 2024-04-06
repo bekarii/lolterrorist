@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+C:/Users/Kevin/Documents/GitHub/lolterrorist/theme/ filter=lfs diff=lfs merge=lfs -text
+C:/Users/Kevin/Documents/GitHub/lolterrorist/theme.mp4/ filter=lfs diff=lfs merge=lfs -text
