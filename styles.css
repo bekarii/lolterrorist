@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Reset CSS */
 * {
     margin: 0;
@@ -69,3 +70,77 @@ footer {
     bottom: 0;
     width: 100%;
 }
+=======
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('sciezka/do/filmu.mp4');
+    background-size: cover; /* Dopasowanie filmu do rozmiaru okna przeglądarki */
+    background-repeat: no-repeat; /* Wyłączenie powtarzania filmu */
+}
+
+header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.post {
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+footer {
+    text-align: center;
+    background-color: #3b5998;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+>>>>>>> a5cdb51428cc62be7ebb63891b3d41c28dcaa489
