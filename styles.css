@@ -25,7 +25,8 @@ body, html {
     background-image: url('theme.mp4'); /* Ścieżka do pliku theme.mp4 */
     background-size: cover;
     background-repeat: no-repeat;
-    filter: blur(20px); /* Rozmycie tła o 20px */
+    filter: blur(5px); /* Rozmycie tła o 5px */
+    opacity: 0.75; /* Przyciemnienie tła */
 }
 
 .overlay {
@@ -34,7 +35,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Lekko przyciemnione tło */
+    background-color: rgba(0, 0, 0, 0.25); /* Lekko przyciemnione tło */
 }
 
 .content {
