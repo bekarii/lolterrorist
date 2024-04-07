@@ -37,12 +37,21 @@
     </div>
   </div>
   <button id="toggleSound" class="sound-button"><img id="soundIcon" src="sound_on.png" alt="Sound"></button>
-  <button id="toggleBackground" class="toggle-background-button">Toggle Background</button>
 </div>
 
 <!-- Umieść widget playlisty Spotify -->
 <iframe id="spotifyWidget" src="https://open.spotify.com/embed/playlist/2IOUD8Kvan6GE8AQPY3Lqv?utm_source=generator&theme=0" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
 <script src="scripts.js"></script>
+<script>
+  // Tablica z nazwami plików tła
+  var backgrounds = ["background1.jpg", "background2.jpg", "background3.jpg"];
+  
+  // Losowe wybieranie tła
+  var randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+  
+  // Ustawianie tła strony
+  document.querySelector('.background').style.backgroundImage = 'url(' + randomBackground + ')';
+</script>
 </body>
 </html>
