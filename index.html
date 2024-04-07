@@ -27,11 +27,14 @@
       </div>
     </div>
   </div>
+  <button id="toggleSound" class="sound-button"><img id="soundIcon" src="sound_on.png" alt="Sound"></button>
   <button id="toggleBackground" class="toggle-background-button">Toggle Background</button>
-  <button id="toggleSound" class="toggle-sound-button">
-    <img id="soundIcon" src="sound_on.png" alt="Sound">
-  </button>
 </div>
+
+<audio id="backgroundMusic" loop>
+  <source src="song.mp4" type="audio/mp4">
+  Your browser does not support the audio element.
+</audio>
 
 <script src="scripts.js"></script>
 </body>
