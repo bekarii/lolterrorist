@@ -47,7 +47,7 @@ body, html {
 
 .top-bar {
     position: absolute;
-    top: 20px; /* Nowa pozycja */
+    top: -130px; /* Nowa pozycja */
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20px;
@@ -69,7 +69,7 @@ body, html {
 .modal {
     display: none;
     position: fixed;
-    top: 50%;
+    top: -30px;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 80%; /* Nowa szerokość */
@@ -100,7 +100,7 @@ body, html {
 /* Dodatkowy styl dla logo */
 .logo-container {
     position: absolute;
-    top: 20px;
+    top: -250px;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.7);
+    transform: translate(-50%, -50%) scale(0.47);
 }
