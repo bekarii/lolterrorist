@@ -22,7 +22,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('theme.mp4'); /* Ścieżka do pliku theme.mp4 */
+    background-image: url('background.jpg'); /* Ścieżka do pliku background.jpg */
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(5px); /* Rozmycie tła o 5px */
@@ -87,7 +87,7 @@ body, html {
     border-radius: 10px;
 }
 
-.toggle-background-button {
+.sound-button {
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -99,17 +99,14 @@ body, html {
     border-radius: 5px;
 }
 
-.toggle-sound-button {
-  position: absolute;
-  top: 10px; /* Przykładowa wartość */
-  left: 10px; /* Przykładowa wartość */
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-}
-
-.toggle-sound-button img {
-  width: 40px;
-  height: auto;
+.toggle-background-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; /* Przycisk w prawym dolnym rogu */
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }
