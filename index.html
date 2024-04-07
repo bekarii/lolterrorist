@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LOLterrorist</title>
 <link rel="stylesheet" href="styles.css">
-</style>
 </head>
 <body>
 
@@ -13,24 +12,30 @@
   <div class="background"></div>
   <div class="overlay"></div>
   <div class="content">
+    <!-- Dodajemy logo -->
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo">
+    </div>
+    <!-- Koniec dodawania logo -->
     <div class="top-bar">
       <ul>
-        <li><a href="#" class="button"><img src="bot.png" alt="BOT"></a></li>
-        <li><a href="#" class="button"><img src="top.png" alt="TOP"></a></li>
-        <li><a href="#" class="button"><img src="mid.png" alt="MID"></a></li>
-        <li><a href="#" class="button"><img src="jungle.png" alt="JUNGLE"></a></li>
-        <li><a href="#" class="button"><img src="support.png" alt="SUPPORT"></a></li>
+        <li><a href="#" class="button" onclick="startHeroAnimation('mid')"><img src="bot.png" alt="BOT"></a></li>
+        <li><a href="#" class="button" onclick="startHeroAnimation('top')"><img src="top.png" alt="TOP"></a></li>
+        <li><a href="#" class="button" onclick="startHeroAnimation('bot')"><img src="mid.png" alt="MID"></a></li>
+        <li><a href="#" class="button" onclick="startHeroAnimation('jg')"><img src="jungle.png" alt="JUNGLE"></a></li>
+        <li><a href="#" class="button" onclick="startHeroAnimation('support')"><img src="support.png" alt="SUPPORT"></a></li>
       </ul>
     </div>
     <div class="modal">
       <div class="modal-content">
-        <!-- Tutaj będzie animacja losowania bohaterów -->
+        <img id="heroIcon" src="" alt="Hero Icon">
       </div>
     </div>
   </div>
-  <button id="toggleSound" class="sound-button"><img id="soundIcon" src="sound_on.png" alt="Sound"></button>
-</div>
 
+<audio id="audioPlayer" controls autoplay>
+  Twoja przeglądarka nie obsługuje elementu audio.
+</audio>
 
 <script src="scripts.js"></script>
 <script>
@@ -43,5 +48,6 @@
   // Ustawianie tła strony
   document.querySelector('.background').style.backgroundImage = 'url(' + randomBackground + ')';
 </script>
+
 </body>
 </html>
