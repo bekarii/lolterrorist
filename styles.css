@@ -98,3 +98,18 @@ body, html {
     border: none;
     border-radius: 5px;
 }
+
+.toggle-sound-button {
+  position: absolute;
+  top: 10px; /* Przykładowa wartość */
+  left: 10px; /* Przykładowa wartość */
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.toggle-sound-button img {
+  width: 40px;
+  height: auto;
+}
