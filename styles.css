@@ -7,7 +7,6 @@
 
 body, html {
     height: 100%;
-    overflow: hidden; /* Zapobieganie przewijaniu strony */
 }
 
 .container {
@@ -22,7 +21,6 @@ body, html {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('background.jpg'); /* Ścieżka do pliku background.jpg */
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(5px); /* Rozmycie tła o 5px */
@@ -42,96 +40,67 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1; /* Zapewnia, że zawartość będzie na wierzchu */
+    z-index: 1;
+    width: 90%; /* Nowa szerokość */
+    max-width: 500px; /* Maksymalna szerokość */
 }
 
 .top-bar {
     position: absolute;
-    top: -150px;
+    top: 20px; /* Nowa pozycja */
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20px;
+    width: 100%; /* Nowa szerokość */
+    max-width: 400px; /* Maksymalna szerokość */
 }
 
 .top-bar ul {
     list-style-type: none;
     display: flex;
-}
-
-.top-bar li {
-    margin-right: 20px;
+    justify-content: space-around; /* Rozłożenie ikon równomiernie */
 }
 
 .button img {
-    width: 50px; /* Ustawienie szerokości ikon */
-    height: auto; /* Zachowanie proporcji */
+    width: 40px; /* Nowa szerokość */
+    height: auto;
 }
 
 .modal {
     display: none;
     position: fixed;
-    top: -100px; /* Zmiana wartości na 50% */
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%); /* Dodanie przesunięcia o 20% wysokości okna */
+    transform: translate(-50%, -50%);
+    width: 80%; /* Nowa szerokość */
+    max-width: 300px; /* Maksymalna szerokość */
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-    position: relative; /* Zmiana na relative */
-    background-color:none;
-    padding: 10px;
+    position: relative;
+    background-color: none;
+    padding: 5px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Dodanie cienia */
-    border: none; /* Usunięcie obramowania */
-}
-
-.toggle-background-button {
-    position: absolute;
-    bottom: 20px;
-    right: 20px; /* Przycisk w prawym dolnym rogu */
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border: none;
-    border-radius: 5px;
 }
 
 #audioPlayer {
-    position: absolute;
+    position: fixed;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: none;
     padding: 10px 20px;
-    border-radius: 0px;
-    box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
-    border: none; /* Usunięcie obramowania */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
 }
 
 /* Dodatkowy styl dla logo */
 .logo-container {
     position: absolute;
-    top: -300px;
+    top: 20px;
     left: 50%;
-    transform: translate(-50%, -50%) scale(0.7); /* Wyśrodkowanie i zmniejszenie rozmiaru o 50% */
-}
-
-/* Dodatkowy styl dla ikon bohatera */
-.icon-button img {
-    width: 100px; /* Ustawienie szerokości ikony */
-    height: auto; /* Zachowanie proporcji */
-    background-color: transparent; /* Usunięcie tła */
-    border: none; /* Usunięcie obramowania */
-}
-
-#heroIcon {
-    width: 100px; 
-    height: auto; 
-    border: #333; 
-    padding: 0.4%;
-    padding-top: -10px;
-    padding-right: -10px;
-    padding-bottom: -10px;
-    padding-left: -10px;
+    transform: translate(-50%, -50%) scale(0.7);
 }
