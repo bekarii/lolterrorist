@@ -47,7 +47,7 @@ body, html {
 
 .top-bar {
     position: absolute;
-    top: 20px;
+    top: -150px;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 20px;
@@ -63,7 +63,7 @@ body, html {
 }
 
 .button img {
-    width: 40px; /* Ustawienie szerokości ikon */
+    width: 50px; /* Ustawienie szerokości ikon */
     height: auto; /* Zachowanie proporcji */
 }
 
@@ -87,18 +87,6 @@ body, html {
     border-radius: 10px;
 }
 
-.sound-button {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    cursor: pointer;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-}
-
 .toggle-background-button {
     position: absolute;
     bottom: 20px;
@@ -109,4 +97,40 @@ body, html {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
+}
+
+#audioPlayer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: none;
+    padding: 10px 20px;
+    border-radius: 0px;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+    border: none; /* Usunięcie obramowania */
+}
+
+/* Dodatkowy styl dla logo */
+.logo-container {
+    position: absolute;
+    top: -300px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7); /* Wyśrodkowanie i zmniejszenie rozmiaru o 50% */
+}
+
+/* Dodatkowy styl dla ikon bohatera */
+.icon-button img {
+    width: 100px; /* Ustawienie szerokości ikony */
+    height: auto; /* Zachowanie proporcji */
+    background-color: transparent; /* Usunięcie tła */
+    border: none; /* Usunięcie obramowania */
+}
+
+/* Dodatkowy styl dla ikon bohatera */
+#heroIcon {
+    width: 100px; /* Ustawienie szerokości ikony */
+    height: auto; /* Zachowanie proporcji */
+    background-color: transparent; /* Usunięcie tła */
+    border: none; /* Usunięcie obramowania */
 }
