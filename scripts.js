@@ -1,22 +1,34 @@
-const background = document.querySelector('.background');
-const toggleBackgroundButton = document.getElementById('toggleBackground');
-const toggleSoundButton = document.getElementById('toggleSound');
-const soundIcon = document.getElementById('soundIcon');
-let isBackgroundVideo = true;
-let isSoundOn = true;
-
-// Toggle background video
-toggleBackgroundButton.addEventListener('click', () => {
-  isBackgroundVideo = !isBackgroundVideo;
-  background.style.backgroundImage = isBackgroundVideo ? "url('theme.mp4')" : "url('background.jpg')";
-});
-
-// Toggle sound
-toggleSoundButton.addEventListener('click', () => {
-  isSoundOn = !isSoundOn;
-  soundIcon.src = isSoundOn ? 'sound_on.png' : 'sound_off.png';
-  // Adjust volume accordingly
-  // Assuming you have an audio element with id 'backgroundMusic'
+document.addEventListener('DOMContentLoaded', function () {
   const backgroundMusic = document.getElementById('backgroundMusic');
-  backgroundMusic.volume = isSoundOn ? 0.4 : 0;
+  const toggleSoundButton = document.getElementById('toggleSound');
+  const soundIcon = document.getElementById('soundIcon');
+
+  let isSoundOn = true;
+
+  toggleSoundButton.addEventListener('click', function () {
+    isSoundOn = !isSoundOn;
+    if (isSoundOn) {
+      backgroundMusic.play();
+    } else {
+      backgroundMusic.pause();
+    }
+    soundIcon.src = isSoundOn ? 'sound_on.png' : 'sound_off.png';
+  });
+
+  // Set default volume
+  backgroundMusic.volume = 0.4;
+
+  const toggleBackgroundButton = document.getElementById('toggleBackground');
+  const container = document.querySelector('.container');
+
+  let isVideoBackground = false;
+
+  toggleBackgroundButton.addEventListener('click', function () {
+    isVideoBackground = !isVideoBackground;
+    if (isVideoBackground) {
+      container.style.backgroundImage = "url('theme.mp4')";
+    } else {
+      container.style.backgroundImage = "url('background.jpg')";
+    }
+  });
 });
